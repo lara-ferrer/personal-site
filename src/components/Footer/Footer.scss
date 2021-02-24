@@ -1,0 +1,15 @@
+.footer {
+    background: #f04d2d;
+    background: -webkit-linear-gradient(to left, #c9216c, #f04d2d);
+    background: linear-gradient(to left, #c9216c, #f04d2d);
+
+    p {
+        margin: 0;
+    }
+    
+    .credits {
+        text-align: center;
+        color: #fff;
+        padding: 3em 0;
+    }
+}

@@ -1,0 +1,22 @@
+.menu {
+    background: #f04d2d;
+    background: -webkit-linear-gradient(to left, #c9216c, #f04d2d);
+    background: linear-gradient(to left, #c9216c, #f04d2d);
+    padding: 1em 5em;
+
+    .menu-link {
+        color: #fff!important;
+        font-family: 'Nunito', Arial, sans-serif!important;
+        text-transform: uppercase;
+        padding-right: 1.5em!important;
+        font-weight: 700;
+    }
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgb(222, 222, 222)!important;
+}
+
+.navbar-collapse {
+    margin: 2em 0;
+}

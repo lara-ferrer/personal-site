@@ -1,0 +1,30 @@
+.posts-list {
+    margin: 0 !important;
+    justify-content: center;
+    padding: 100px 0!important;
+
+    &__item {
+        width: 100%!important;
+
+        &__header {
+            background-image: linear-gradient(to left, #f04d2d, #c9216c);
+            padding: 10px;
+
+            img {
+                width: 20%;
+            }
+
+            h2 {
+                color: #fff;
+                font-size: 16px!important;
+                text-align: right;
+                padding-right: 10px;
+            }
+
+            &__container {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

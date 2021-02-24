@@ -1,0 +1,141 @@
+@import "./index.scss";
+
+::selection {
+    background: #c9216c!important;
+    color: #fff!important;
+}
+
+h1, h2, h3, p {
+    font-family: 'Nunito', Arial, sans-serif!important;
+}
+
+h1 {
+    font-size: 1.5em!important;
+    font-weight: 500;
+    line-height: 1.1em!important;
+
+    &:last-child {
+        margin-top: -30px;
+    }
+
+    @include tablet {
+        font-size: 1.5em!important;
+    }
+
+    @include mobile {
+        font-size: 1em!important;
+    }
+}
+
+h2.text-gradient {
+    text-transform: uppercase;
+    font-size: 45px!important;
+    line-height: 55px;
+    font-weight: 700;
+
+    @include mobile {
+        margin-bottom: 0.5em!important;
+    }
+
+}
+
+.text-gradient {
+    background-image: linear-gradient(to left, #c9216c, #f04d2d);     
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a.btn.btn-primary, .button-blog {
+    display: inline-block;
+    background: #f04d2d;
+    transition: 0.5s;
+    background: linear-gradient(90deg, var(--coral, #f04d2d), var(--fucsia, #c9216c) 51%, var(--coral, #f04d2d)) var(--x, 0)/ 200%;
+    color: #fff!important;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+    padding: 1.2em;
+    margin: 0 1.3em 1em 0;
+    border-radius: 3em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8em;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    box-shadow: 0 0 20px #eee;
+    &:hover { --x: 100%; }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem #c9216c;
+}
+
+.card-special {
+    margin-bottom: 2em!important;
+    width: 100%!important;
+
+    .row {
+        margin: 15px 0;
+    }
+
+    &__header {
+        background-image: linear-gradient(to left, #f04d2d, #c9216c);
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+
+        &__item {
+            img {
+                width: 50%;
+            }
+        }
+
+        .item-1 {
+            width: 20%;
+        }
+
+        .item-2 {
+            width: 80%;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 16px!important;
+            text-align: right;
+            padding-right: 10px;
+        }
+    }
+
+    i {
+        color: #000;
+    }
+}
+
+
+.banner-info {
+    @include mobile {
+        margin: 0 auto!important;
+        padding: 1.5em 0.8em;
+        height: 320px;
+        text-align: center;
+    }
+}
+
+.workgallery {
+    @include mobile {
+        padding: 0 15px!important;
+        margin-bottom: 6em;
+    }
+}
+
+.gallery-controls {
+    @include mobile {
+        margin-bottom: 1em;
+    }
+}
