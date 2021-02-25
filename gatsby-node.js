@@ -20,10 +20,10 @@ exports.createPages = async ({ actions, graphql }) => {
                     Titulo
                     createdAt
                     id
-                    url
                     img_destacada {
                         publicURL
-                    }
+                      }
+                    url
                 }
             }
         } 

@@ -34,10 +34,10 @@ export const query = graphql`
                 Titulo
                 createdAt
                 id
-                url
                 img_destacada {
-                    publicURL
+                  publicURL
                 }
+                url
             }
         }
     } 
