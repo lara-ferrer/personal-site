@@ -1,3 +1,26 @@
+/* GENERAL RULES */
+h2.text-gradient {
+    @include mobile {
+        text-align: center;
+        font-size: 2.7em!important;
+        line-height: 1.2em;
+    }
+}
+
+.center-mobile { 
+    @include mobile {
+        text-align: center;
+    }
+}
+
+/* MENU */
+.menu {
+    @include mobile {
+        padding: 1em!important;
+    }
+}
+
+/* MAIN BANNER SECTION */
 .banner-info {
     @include mobile {
         margin: 0 auto!important;
@@ -7,6 +30,14 @@
     }
 }
 
+/* ABOUT SECTION */
+.about p {
+    @include mobile {
+        text-align: center!important;
+    }
+}
+
+/* WORK SECTION */
 .workgallery {
     @include mobile {
         padding: 0 15px!important;
@@ -17,11 +48,19 @@
 .gallery-controls {
     @include mobile {
         margin-bottom: 1em;
+        text-align: center;
     }
 }
 
-.menu {
+.card-special .row {
     @include mobile {
-        padding: 0;
+        margin: 0;
+    }
+}
+
+/* CONTACT SECTION */
+.contact img {
+    @include mobile {
+        width: 50%!important;
     }
 }

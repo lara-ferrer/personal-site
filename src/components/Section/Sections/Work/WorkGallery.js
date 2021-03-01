@@ -14,18 +14,18 @@ const seo =
           <Card.Content>
             <Card.Description>
               <Row>
-                <Col lg={6} xs={12}>
+                <Col lg={6} md={6} sm={6} xs={6}>
                   <p><Icon link name="check square" />Análisis, planificación y ejecución de estrategias SEO On-Page y Off-Page</p>
                 </Col>
-                <Col lg={6} xs={12}>
+                <Col lg={6} md={6} sm={6} xs={6}>
                   <p><Icon link name="check square" />Análisis y mejoras de performance web (WPO)</p>
                 </Col>
               </Row>
               <Row>
-                <Col lg={6} xs={12}>
+                <Col lg={6} md={6} sm={6} xs={6}>
                   <p><Icon link name="check square" />Coordinación con otras estrategias de marketing on-line (RRSS, e-mail marketing...)</p>
                 </Col>
-                <Col lg={6} xs={12}>
+                <Col lg={6} md={6} sm={6} xs={6}>
                   <p><Icon link name="check square" />Uso de herramientas como Screaming Frog, AHREFS, Sistrix, etc. para auditar y monitorizar los proyectos</p>
                 </Col>
               </Row>
@@ -44,18 +44,18 @@ const dev =
           <Card.Content>
             <Card.Description>
               <Row>
-                <Col lg={6} xs={12}>
+                <Col lg={6} md={6} sm={6} xs={6}>
                   <p><Icon link name="check square" />Diseño de wireframes y layouts</p>
                 </Col>
-                <Col lg={6} xs={12}>
+                <Col lg={6} md={6} sm={6} xs={6}>
                   <p><Icon link name="check square" />Maquetación web con HTML5 y CSS3</p>
                 </Col>
               </Row>
               <Row>
-                <Col lg={6} xs={12}>
+                <Col lg={6} md={6} sm={6} xs={6}>
                   <p><Icon link name="check square" />Desarrollo de tiendas on-line con Woocommerce y Prestashop</p>
                 </Col>
-                <Col lg={6} xs={12}>
+                <Col lg={6} md={6} sm={6} xs={6}>
                   <p><Icon link name="check square" />Optimización técnica de performance web (WPO)</p>
                 </Col>
               </Row>
