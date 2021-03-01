@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Banner.scss"
-import { Container, Row, Col, Image } from "react-bootstrap"
-import profileImage from "../../images/profile.png"
+import { Container, Row, Col } from "react-bootstrap"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import { useState, useEffect, useRef } from "react";
 import useTypewriter from "react-typewriter-hook"
 
@@ -12,7 +13,8 @@ const work_title = [
 
 let index = 0;
   
-export default function Banner() {
+export default function Banner(props) {
+    const { images } = props;
     const [workTitle, setWorkTitle] = useState("desarrolladora web.");
     const intervalRef = useRef({});
     const name = useTypewriter(workTitle);
@@ -40,7 +42,7 @@ export default function Banner() {
                       </div>
                     </Col>
                     <Col xs={12} md={6} className="profile">
-                        <Image src={profileImage} />
+                      <Img fixed={images.childImageSharp.fixed} width={images.childImageSharp.fixed.width} height={images.childImageSharp.fixed.height}/>
                     </Col>
                 </Row>
             </Container>

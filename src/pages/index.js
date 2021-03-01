@@ -7,14 +7,17 @@ import WorkGallery from "../components/Section/Sections/Work/WorkGallery"
 import Contact from "../components/Contact/Contact"
 import Seo from "../components/Seo"
 
-export default function Index() {
+export default function Index(props) {
+  const { data } = props
+  const images = data.file
+
   return (
     <Layout>
       <Seo 
         title = "Inicio"
         description = "¡Hola! Soy Lara, desarrolladora web y consultora SEO. Te animo a que visites mi página web para conocer más sobre mí :)"
       />
-      <Banner />
+      <Banner images={images}/>
       <About />
       <Skills />
       <WorkGallery />
@@ -22,3 +25,20 @@ export default function Index() {
     </Layout>
   )
 }
+
+export const query = graphql`
+query {
+  file(relativePath: {eq: "profile.png"}) {
+    childImageSharp {
+      fixed(width: 500, height: 600) {
+        base64
+        width
+        height
+        src
+        srcSet
+      }
+    }
+  }
+}
+
+`
