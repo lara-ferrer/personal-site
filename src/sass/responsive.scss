@@ -1,0 +1,27 @@
+.banner-info {
+    @include mobile {
+        margin: 0 auto!important;
+        padding: 1.5em 0.8em;
+        height: 320px;
+        text-align: center;
+    }
+}
+
+.workgallery {
+    @include mobile {
+        padding: 0 15px!important;
+        margin-bottom: 6em;
+    }
+}
+
+.gallery-controls {
+    @include mobile {
+        margin-bottom: 1em;
+    }
+}
+
+.menu {
+    @include mobile {
+        padding: 0;
+    }
+}

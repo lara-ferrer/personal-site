@@ -94,7 +94,7 @@ export default function WorkGallery() {
                 <Col lg={5}>
                     <h2 className="text-gradient">Experiencia laboral</h2>
                     <div className="gallery-controls">
-                    <Button class="blow-btn" href="#" active={filter === "dev"} onClick={() => setFilter("dev")}>Desarrollo web</Button>
+                    <Button className="blow-btn" href="#" active={filter === "dev"} onClick={() => setFilter("dev")}>Desarrollo web</Button>
                     <Button className="blow-btn" href="#" active={filter === "seo"} onClick={() => setFilter("seo")}>Posicionamiento SEO</Button>
                     </div>
                 </Col>
