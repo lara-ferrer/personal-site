@@ -9,18 +9,104 @@ import "./PostsList.scss"
 export default function PostsList(props) {
     const { allPosts, seoPosts, devPosts } = props
     
+    const all = 
+    <React.Fragment>
+        <Grid className="posts-list">
+            {map(allPosts, post => (
+                <Grid.Column key={post.id} mobile={16} tablet={16} computer={5}>
+                        <Card className="posts-list__item">
+                            <div className="posts-list__item__header">
+                                <div className="posts-list__item__header__container">
+                                    <Image src={windowControls} />
+                                    <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
+                                </div>
+                            </div>
+                        <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
+                        <Card.Content>
+                            <Card.Description>
+                                <p>{post.Extracto}</p>
+                            </Card.Description>
+                        </Card.Content>
+                        <Card.Content extra>
+                            <Card.Meta>Categoría: {post.Categoria}</Card.Meta>
+                        </Card.Content>
+                    </Card>
+                </Grid.Column>
+            ))}
+        </Grid>
+    </React.Fragment>
+
+    const dev = 
+    <React.Fragment>
+        <Grid className="posts-list">
+            {map(devPosts, post => (
+                <Grid.Column key={post.id} mobile={16} tablet={16} computer={5}>
+                        <Card className="posts-list__item">
+                            <div className="posts-list__item__header">
+                                <div className="posts-list__item__header__container">
+                                    <Image src={windowControls} />
+                                    <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
+                                </div>
+                            </div>
+                        <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
+                        <Card.Content>
+                            <Card.Description>
+                                <p>{post.Extracto}</p>
+                            </Card.Description>
+                        </Card.Content>
+                        <Card.Content extra>
+                            <Card.Meta>Categoría: {post.Categoria}</Card.Meta>
+                        </Card.Content>
+                    </Card>
+                </Grid.Column>
+            ))}
+        </Grid>
+    </React.Fragment>
+
+    const seo = 
+    <React.Fragment>
+        <Grid className="posts-list">
+            {map(seoPosts, post => (
+                <Grid.Column key={post.id} mobile={16} tablet={16} computer={5}>
+                        <Card className="posts-list__item">
+                            <div className="posts-list__item__header">
+                                <div className="posts-list__item__header__container">
+                                    <Image src={windowControls} />
+                                    <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
+                                </div>
+                            </div>
+                        <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
+                        <Card.Content>
+                            <Card.Description>
+                                <p>{post.Extracto}</p>
+                            </Card.Description>
+                        </Card.Content>
+                        <Card.Content extra>
+                            <Card.Meta>Categoría: {post.Categoria}</Card.Meta>
+                        </Card.Content>
+                    </Card>
+                </Grid.Column>
+            ))}
+        </Grid>
+    </React.Fragment>
+
+
     const categories = [
         {
-            contains: seoPosts,
+            contains: all,
+            category: ["all"]
+        },
+        {
+            contains: seo,
             category: ["seo"]
         },
         {
-            contains: devPosts,
+            contains: dev,
             category: ["dev"]
         }
       ];
     
-    const [filter, setFilter] = useState("dev");
+    const [filter, setFilter] = useState("all");
     const [projects, setProjects] = useState([]);
 
     useEffect(() => {
@@ -34,33 +120,17 @@ export default function PostsList(props) {
 
     return (
         <div>
-            <div>
-                <Button className="blow-btn" href="#" active={filter === "dev"} onClick={() => setFilter("dev")}>Desarrollo web</Button>
-                <Button className="blow-btn" href="#" active={filter === "seo"} onClick={() => setFilter("seo")}>Posicionamiento SEO</Button>
-            </div>
-            <Grid className="posts-list">
-                {map(allPosts, post => (
-                    <Grid.Column key={post.id} mobile={16} tablet={16} computer={5}>
-                        <Card className="posts-list__item">
-                            <div className="posts-list__item__header">
-                                <div className="posts-list__item__header__container">
-                                    <Image src={windowControls} />
-                                    <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
-                                </div>
-                            </div>
-                            <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
-                            <Card.Content>
-                                <Card.Description>
-                                    <p>{post.Extracto}</p>
-                                </Card.Description>
-                            </Card.Content>
-                            <Card.Content extra>
-                                <Card.Meta>Categoría: {post.Categoria}</Card.Meta>
-                            </Card.Content>
-                        </Card>
-                    </Grid.Column>
-                ))}
+            <Grid className="filtered-button">
+                <div>
+                    <Button className="blow-btn" href="#" active={filter === "all"} onClick={() => setFilter("all")}>Ver todo</Button>
+                    <Button className="blow-btn" href="#" active={filter === "dev"} onClick={() => setFilter("dev")}>Desarrollo web</Button>
+                    <Button className="blow-btn" href="#" active={filter === "seo"} onClick={() => setFilter("seo")}>Posicionamiento SEO</Button>
+                </div>
             </Grid>
+
+            {projects.map(item =>
+                item.filtered === true ? <span key={item.contains}>{item.contains}</span> : ""
+            )}
         </div>
     )
 }
