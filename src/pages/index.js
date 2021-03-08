@@ -31,11 +31,11 @@ query {
   file(relativePath: {eq: "profile.png"}) {
     childImageSharp {
       fixed(width: 500, height: 600) {
-        base64
-        width
-        height
-        src
-        srcSet
+         base64
+          width
+          height
+          src
+          srcSet
       }
     }
   }

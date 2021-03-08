@@ -8,7 +8,9 @@ import "./blog.scss"
 
 export default function Blog(props) {
   const { data, pageContext } = props
-  const posts = data.allStrapiArticulo.nodes
+  const allPosts = data.all.nodes
+  const seoPosts = data.seo.nodes
+  const devPosts = data.dev.nodes
 
   return (
     <Layout>
@@ -16,7 +18,7 @@ export default function Blog(props) {
         title="Blog"
         description="Conoce más sobre desarrollo web, marketing y nuevas tecnologías."
       />
-      <PostsList posts={posts}/>
+      <PostsList allPosts={allPosts} seoPosts={seoPosts} devPosts={devPosts} />
       <div className="pagination"><Pagination pageContext={pageContext}/></div>
     </Layout>
   )
@@ -24,21 +26,62 @@ export default function Blog(props) {
 
 export const query = graphql`
   query($skip: Int!, $limit: Int!) {
-    allStrapiArticulo(
+    all: allStrapiArticulo(
       skip: $skip
       limit: $limit
-      sort: { fields: createdAt, order: DESC }) {
-      nodes {
-                Contenido
-                Extracto
-                Titulo
-                createdAt
-                id
-                img_destacada {
-                  publicURL
-                }
-                url
-            }
+      sort: { fields: createdAt, order: DESC }
+      filter: { Categoria: { in: ["SEO", "Desarrollo"] } }) {
+        nodes {
+          Contenido
+          Extracto
+          Titulo
+          createdAt
+          id
+          img_destacada {
+            publicURL
+          }
+          url
+          Categoria
         }
-    } 
+    }
+
+    seo: allStrapiArticulo(
+      skip: $skip
+      limit: $limit
+      sort: { fields: createdAt, order: DESC }
+      filter: { Categoria: { in: "SEO" } }) {
+        nodes {
+          Contenido
+          Extracto
+          Titulo
+          createdAt
+          id
+          img_destacada {
+            publicURL
+          }
+          url
+          Categoria
+        }
+    }
+
+    dev: allStrapiArticulo(
+      skip: $skip
+      limit: $limit
+      sort: { fields: createdAt, order: DESC }
+      filter: { Categoria: { in: "Desarrollo" } }) {
+        nodes {
+          Contenido
+          Extracto
+          Titulo
+          createdAt
+          id
+          img_destacada {
+            publicURL
+          }
+          url
+          Categoria
+        }
+    }
+
+  } 
 `

@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Banner.scss"
 import { Container, Row, Col } from "react-bootstrap"
-import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { useState, useEffect, useRef } from "react";
 import useTypewriter from "react-typewriter-hook"
@@ -42,7 +41,7 @@ export default function Banner(props) {
                       </div>
                     </Col>
                     <Col xs={12} md={6} className="profile">
-                      <Img fixed={images.childImageSharp.fixed} width={images.childImageSharp.fixed.width} height={images.childImageSharp.fixed.height}/>
+                      <Img fixed={images.childImageSharp.fixed} width={images.childImageSharp.fixed.width} width={images.childImageSharp.fixed.width}/>
                     </Col>
                 </Row>
             </Container>
