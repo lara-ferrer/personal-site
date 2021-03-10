@@ -6,6 +6,20 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "G-SD75LYX3EE",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Defers execution of google analytics script after page load
+        defer: false,
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         duration: 1000

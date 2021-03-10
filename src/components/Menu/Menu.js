@@ -12,7 +12,7 @@ export default function SecondMenu() {
     return (
         <div>
            <Navbar className="menu" expand="lg" sticky="top" variant="dark">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/">
                     <Image src={logoMenu} className="logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
