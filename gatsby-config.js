@@ -3,6 +3,7 @@ module.exports = {
     title: `Lara Ferrer`,
     description: `¡Hola! Soy Lara, desarrolladora web y consultora SEO. Te animo a que visites mi página web para conocer más sobre mí :)`,
     author: `@Lara`,
+    siteUrl: `https://www.lara-ferrer.com/`,
   },
   plugins: [
     {
