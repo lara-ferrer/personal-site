@@ -33,11 +33,6 @@ exports.createPages = async ({ actions, graphql }) => {
                         heading
                         id_section
                         text
-                        third_heading {
-                          heading
-                          id_section
-                          text
-                        }
                     }
                 }
             }
