@@ -7,13 +7,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-anchor-links",
-      options: {
-        offset: -100,
-        duration: 1000
-      }
-    },
-    {
       resolve: "gatsby-plugin-page-progress",
       options: {
         includePaths: [{ regex: "^/blog" }],
@@ -47,8 +40,8 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: `http://localhost:5000`,
-        // apiURL: `https://blog-personal-strapi.herokuapp.com`,
+        //apiURL: `http://localhost:5000`,
+        apiURL: `https://blog-personal-strapi.herokuapp.com`,
         contentTypes: [
         'articulo'
         ],
