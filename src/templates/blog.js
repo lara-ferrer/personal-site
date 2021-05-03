@@ -32,7 +32,6 @@ export const query = graphql`
       sort: { fields: createdAt, order: DESC }
       filter: { Categoria: { in: ["SEO", "Desarrollo"] } }) {
         nodes {
-          Contenido
           Extracto
           Titulo
           createdAt
@@ -42,6 +41,16 @@ export const query = graphql`
           }
           url
           Categoria
+          content {
+            heading
+            id_section
+            text
+            third_heading {
+              heading
+              id_section
+              text
+            }
+          }
         }
     }
 
@@ -51,7 +60,6 @@ export const query = graphql`
       sort: { fields: createdAt, order: DESC }
       filter: { Categoria: { in: "SEO" } }) {
         nodes {
-          Contenido
           Extracto
           Titulo
           createdAt
@@ -61,6 +69,16 @@ export const query = graphql`
           }
           url
           Categoria
+          content {
+            heading
+            id_section
+            text
+            third_heading {
+              heading
+              id_section
+              text
+            }
+          }
         }
     }
 
@@ -70,7 +88,6 @@ export const query = graphql`
       sort: { fields: createdAt, order: DESC }
       filter: { Categoria: { in: "Desarrollo" } }) {
         nodes {
-          Contenido
           Extracto
           Titulo
           createdAt
@@ -80,6 +97,16 @@ export const query = graphql`
           }
           url
           Categoria
+          content {
+            heading
+            id_section
+            text
+            third_heading {
+              heading
+              id_section
+              text
+            }
+          }
         }
     }
 

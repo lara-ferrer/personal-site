@@ -7,6 +7,24 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100,
+        duration: 1000
+      }
+    },
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: [{ regex: "^/blog" }],
+        height: 10,
+        prependToBody: false,
+        color: `#c9216c`,
+        footerHeight: 500,
+        headerHeight: 0,
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
@@ -29,7 +47,8 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: `https://blog-personal-strapi.herokuapp.com`,
+        apiURL: `http://localhost:5000`,
+        // apiURL: `https://blog-personal-strapi.herokuapp.com`,
         contentTypes: [
         'articulo'
         ],

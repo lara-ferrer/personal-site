@@ -5,6 +5,12 @@
  */
 
 // You can delete this file if you're not using it
+
+if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+}
+
 const path = require("path")
 const { paginate } = require("gatsby-awesome-pagination")
 
@@ -15,15 +21,24 @@ exports.createPages = async ({ actions, graphql }) => {
         query {
             allStrapiArticulo(sort: { fields: createdAt, order: DESC }) {
                 nodes {
-                    Contenido
                     Extracto
                     Titulo
                     createdAt
                     id
                     img_destacada {
                         publicURL
-                      }
+                    }
                     url
+                    content {
+                        heading
+                        id_section
+                        text
+                        third_heading {
+                          heading
+                          id_section
+                          text
+                        }
+                    }
                 }
             }
         } 
@@ -33,7 +48,7 @@ exports.createPages = async ({ actions, graphql }) => {
       createPage,
       items: posts.data.allStrapiArticulo.nodes,
       itemsPerPage: 6,
-      pathPrefix: '/blog',
+      pathPrefix: '/blog/',
       component: path.resolve(`src/templates/blog.js`),
     })
 

@@ -2,6 +2,42 @@
     padding: 5em 0;
 
     h1 {
-        font-size: 3em!important;
+        font-size: 5em!important;
+        margin-bottom: 0.3em;
     }
+
+    img {
+        width: 100%;
+    }
+
+    .section-post {
+        margin-top: 2em;
+        text-align: justify;
+    }
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 1em;
+
+
+    li {
+        list-style: none;
+
+        a {
+            color: #000;
+            font-weight: 700;
+        }
+    }
+
+    li.is-current a {
+        color: #c9216c;
+    }
+
+    a.top {
+        margin: 10px 0 0 40px;
+    }
+    
 }

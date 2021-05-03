@@ -5,12 +5,19 @@
     color: #fff!important;
 }
 
-h1, h2, h3, p {
+body {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, p, ul li {
     font-family: 'Nunito', Arial, sans-serif!important;
     font-weight: 600;
     text-rendering: optimizeSpeed;
 }
 
+p {
+    font-size: 1.1em;
+}
 
 /* ENCABEZADOS */
 h1 {

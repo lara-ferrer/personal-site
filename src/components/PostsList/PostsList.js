@@ -125,6 +125,7 @@ export default function PostsList(props) {
                     <Button className="blow-btn" href="#" active={filter === "all"} onClick={() => setFilter("all")}>Ver todo</Button>
                     <Button className="blow-btn" href="#" active={filter === "dev"} onClick={() => setFilter("dev")}>Desarrollo web</Button>
                     <Button className="blow-btn" href="#" active={filter === "seo"} onClick={() => setFilter("seo")}>Posicionamiento SEO</Button>
+                    <Button className="blow-btn" href="#" active={filter === "seo"} onClick={() => setFilter("seo")}>Web performance</Button>
                 </div>
             </Grid>
 
