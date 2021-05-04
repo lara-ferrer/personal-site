@@ -40,7 +40,7 @@ export default function post(props) {
                             <Col lg={3}>
                                 <aside className="sticky">
                                     {map(content, content  => (
-                                    <Scrollspy items={ [`${content.id_section}`, `${content.third_heading.id_section}`] } currentClassName="is-current">
+                                    <Scrollspy items={ [`${content.id_section}`] } currentClassName="is-current">
                                         <li><a href={`#${content.id_section}`}>{content.heading}</a></li>
                                     </Scrollspy>
                                     ))}
