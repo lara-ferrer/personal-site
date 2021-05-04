@@ -11,6 +11,7 @@ export default function Blog(props) {
   const allPosts = data.all.nodes
   const seoPosts = data.seo.nodes
   const devPosts = data.dev.nodes
+  const perfPosts = data.perf.nodes
 
   return (
     <Layout>
@@ -18,7 +19,7 @@ export default function Blog(props) {
         title="Blog"
         description="Conoce más sobre desarrollo web, marketing y nuevas tecnologías."
       />
-      <PostsList allPosts={allPosts} seoPosts={seoPosts} devPosts={devPosts} />
+      <PostsList allPosts={allPosts} seoPosts={seoPosts} devPosts={devPosts} perfPosts={perfPosts}/>
       <div className="pagination"><Pagination pageContext={pageContext}/></div>
     </Layout>
   )
@@ -45,11 +46,6 @@ export const query = graphql`
             heading
             id_section
             text
-            third_heading {
-              heading
-              id_section
-              text
-            }
           }
         }
     }
@@ -73,11 +69,6 @@ export const query = graphql`
             heading
             id_section
             text
-            third_heading {
-              heading
-              id_section
-              text
-            }
           }
         }
     }
@@ -101,11 +92,29 @@ export const query = graphql`
             heading
             id_section
             text
-            third_heading {
-              heading
-              id_section
-              text
-            }
+          }
+        }
+    }
+
+    perf: allStrapiArticulo(
+      skip: $skip
+      limit: $limit
+      sort: { fields: createdAt, order: DESC }
+      filter: { Categoria: { in: "Performance web" } }) {
+        nodes {
+          Extracto
+          Titulo
+          createdAt
+          id
+          img_destacada {
+            publicURL
+          }
+          url
+          Categoria
+          content {
+            heading
+            id_section
+            text
           }
         }
     }
