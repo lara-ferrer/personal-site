@@ -8,7 +8,7 @@ import "./PostsList.scss"
 
 export default function PostsList(props) {
     const { allPosts, seoPosts, devPosts, perfPosts } = props
-    
+
     const all = 
     <React.Fragment>
         <Grid className="posts-list">
@@ -156,7 +156,7 @@ export default function PostsList(props) {
                     <Button className="blow-btn" href="#" active={filter === "all"} onClick={() => setFilter("all")}>Ver todo</Button>
                     <Button className="blow-btn" href="#" active={filter === "dev"} onClick={() => setFilter("dev")}>Desarrollo web</Button>
                     <Button className="blow-btn" href="#" active={filter === "seo"} onClick={() => setFilter("seo")}>Posicionamiento SEO</Button>
-                    <Button className="blow-btn" href="#" active={filter === "perf"} onClick={() => setFilter("seo")}>Web performance</Button>
+                    <Button className="blow-btn" href="#" active={filter === "perf"} onClick={() => setFilter("perf")}>Web performance</Button>
                 </div>
             </Grid>
 

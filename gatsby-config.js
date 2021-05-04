@@ -21,7 +21,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "G-SD75LYX3EE",
+        trackingId: "UA-191848240-1",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: true,
         // Delays sending pageview hits on route update (in milliseconds)
@@ -62,13 +62,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `lara-ferrer`,
+        short_name: `lara-ferrer`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#c9216c`,
+        theme_color: `#c9216c`,
         display: `minimal-ui`,
-        icon: `src/images/profile.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

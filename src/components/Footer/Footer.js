@@ -12,7 +12,7 @@ export default function Footer() {
                         <div class="credits">
                             <SocialMedia />
                             <p>&copy; 2020 Lara Ferrer</p>
-                            <p>Made with React&amp;Gatsby</p>
+                            <p>Made with Gatsby&amp;Strapi</p>
                         </div>
                     </Col>
                 </Row>

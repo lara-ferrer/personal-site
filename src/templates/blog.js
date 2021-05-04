@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../layouts/Layout.js"
 import PostsList from "../components/PostsList"
 import Pagination from "../components/Pagination"
@@ -19,6 +20,14 @@ export default function Blog(props) {
         title="Blog"
         description="Conoce más sobre desarrollo web, marketing y nuevas tecnologías."
       />
+        <Container className="blog-title">
+          <Row>
+            <Col xs={12} md={12} lg={12}>
+              <h1>Blog</h1>
+              <p>Descubre todo sobre desarrollo web, performance, UX, SEO y mucho más &#x2728;</p>
+            </Col>
+          </Row>
+        </Container>
       <PostsList allPosts={allPosts} seoPosts={seoPosts} devPosts={devPosts} perfPosts={perfPosts}/>
       <div className="pagination"><Pagination pageContext={pageContext}/></div>
     </Layout>
@@ -31,7 +40,7 @@ export const query = graphql`
       skip: $skip
       limit: $limit
       sort: { fields: createdAt, order: DESC }
-      filter: { Categoria: { in: ["SEO", "Desarrollo"] } }) {
+      filter: { Categoria: { in: ["SEO", "Desarrollo", "Performance"] } }) {
         nodes {
           Extracto
           Titulo
@@ -100,7 +109,7 @@ export const query = graphql`
       skip: $skip
       limit: $limit
       sort: { fields: createdAt, order: DESC }
-      filter: { Categoria: { in: "Performance web" } }) {
+      filter: { Categoria: { in: "Performance" } }) {
         nodes {
           Extracto
           Titulo
