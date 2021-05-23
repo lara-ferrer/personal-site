@@ -1,54 +1,7 @@
 @import "../../sass/index.scss";
 
 section {
-    padding: 4em 0;
-    margin: 2em 0;
-}
-
-.skill-modules {
-    border-radius: 3em;
-    padding: 3em;
-    margin-bottom: 2em;
-
-    &:hover {
-        transition: 0.4s;
-    }
-}
-
-.languages {
-    border: 1px solid $coral;
-    
-    &:hover {
-        background-color: $coral;
-    }
-}
-
-.frameworks {
-    border: 1px solid $fucsia;
-
-    &:hover {
-        background-color: $fucsia;
-    }
-}
-
-.software {
-    border: 1px solid $fucsia;
-
-    &:hover {
-        background-color: $fucsia;
-    }
-}
-
-.tools {
-    border: 1px solid $coral;
-
-    &:hover {
-        background-color: $coral;
-    }
-}
-
-.workgallery {
-    padding: 2em 0 8em 0;
+    margin: 8em 0;
 }
 
 i.icon.check.square {

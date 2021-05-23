@@ -11,7 +11,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 export default function SecondMenu() {
     return (
         <div>
-           <Navbar className="menu" expand="lg" sticky="top" variant="dark">
+           <Navbar className="menu" expand="lg" sticky="top" variant="dark" id="top">
                 <Navbar.Brand href="/">
                     <Image src={logoMenu} className="logo" />
                 </Navbar.Brand>

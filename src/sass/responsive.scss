@@ -30,6 +30,11 @@ h2.text-gradient {
     }
 }
 
+/* GLOBAL SECTIONS */
+section {
+    margin: 4em 0;
+}
+
 /* ABOUT SECTION */
 .about p {
     @include mobile {
@@ -38,13 +43,6 @@ h2.text-gradient {
 }
 
 /* WORK SECTION */
-.workgallery {
-    @include mobile {
-        padding: 0 15px!important;
-        margin-bottom: 6em;
-    }
-}
-
 .gallery-controls {
     @include mobile {
         margin-bottom: 1em;

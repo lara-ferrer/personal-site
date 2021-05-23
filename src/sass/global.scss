@@ -64,7 +64,7 @@ h3 {
 /* BOTONES */
 a.btn.btn-primary, .button-blog {
     display: inline-block;
-    background: #f04d2d;
+    background: #f04d2d!important;
     transition: 0.5s;
     background: linear-gradient(90deg, var(--coral, #f04d2d), var(--fucsia, #c9216c) 51%, var(--coral, #f04d2d)) var(--x, 0)/ 200%;
     color: #fff!important;

@@ -5,6 +5,8 @@ import { Container, Row, Col, Button, Image } from "react-bootstrap"
 import ShareSocial from "../../components/ShareSocial"
 import Scrollspy from 'react-scrollspy'
 import { map } from "lodash"
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 import "./post.scss"
 
 export default function post(props) {
@@ -12,8 +14,9 @@ export default function post(props) {
     const { pageContext } = props;
     const { data: post } = pageContext;
     const { content } = post;
-    console.log(content);
     
+    const mapIdSection = content.map(content => content.id_section);
+
     return (
         <Layout>
             <Seo 
@@ -39,12 +42,12 @@ export default function post(props) {
                         <Row>
                             <Col lg={3}>
                                 <aside className="sticky">
-                                    {map(content, content  => (
-                                    <Scrollspy items={ [`${content.id_section}`] } currentClassName="is-current">
-                                        <li><a href={`#${content.id_section}`}>{content.heading}</a></li>
-                                    </Scrollspy>
-                                    ))}
-                                    <Button href="#top" className="top">Volver arriba</Button>
+                                        <Scrollspy items={mapIdSection} currentClassName="is-current">
+                                        {map(content, content  => (
+                                            <li><a href={`#${content.id_section}`}>{content.heading}</a></li>
+                                            ))}
+                                        </Scrollspy>
+                                        <Button className="top button-blog" onClick={() => scrollTo('#top')}>Volver arriba</Button>
                                 </aside>
                             </Col>
 

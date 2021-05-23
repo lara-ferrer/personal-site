@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout"
 import Banner from "../components/Banner"
 import About from "../components/Section/Sections/About/About"
 import Skills from "../components/Section/Sections/Skills/Skills"
-import WorkGallery from "../components/Section/Sections/Work/WorkGallery"
+import Work from "../components/Section/Sections/Work/Work"
 import Contact from "../components/Contact/Contact"
 import Seo from "../components/Seo"
 
@@ -20,7 +20,7 @@ export default function Index(props) {
       <Banner images={images}/>
       <About />
       <Skills />
-      <WorkGallery />
+      <Work />
       <Contact />
     </Layout>
   )
