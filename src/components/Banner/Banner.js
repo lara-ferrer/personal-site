@@ -7,7 +7,7 @@ import useTypewriter from "react-typewriter-hook"
 
 const work_title = [
     "desarrolladora web.",
-    "consultora SEO.",
+    "especialista en WPO.",
   ];
 
 let index = 0;

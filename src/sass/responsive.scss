@@ -32,7 +32,21 @@ h2.text-gradient {
 
 /* GLOBAL SECTIONS */
 section {
-    margin: 4em 0;
+    @include mobile {
+        margin: 4em 0;
+    }
+}
+
+.card-special__header__item img {
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.ui.card.card-special p {
+    @include mobile {
+        margin-bottom: 1.2em!important;
+    }
 }
 
 /* ABOUT SECTION */
@@ -57,6 +71,12 @@ section {
 }
 
 /* CONTACT SECTION */
+.contact {
+    @include mobile {
+        padding: 2em 4em;
+    }
+}
+
 .contact img {
     @include mobile {
         width: 50%!important;
