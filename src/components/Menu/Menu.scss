@@ -2,7 +2,10 @@
     background: #f04d2d;
     background: -webkit-linear-gradient(to left, #c9216c, #f04d2d);
     background: linear-gradient(to left, #c9216c, #f04d2d);
-    padding: 1em 5em;
+    padding: 3em 5em;
+    @media (max-width: 992px) {
+        padding: 1em 5em;
+    }
 
     .menu-link {
         color: #fff!important;
@@ -21,6 +24,6 @@
     border-color: rgb(222, 222, 222)!important;
 }
 
-.navbar-collapse {
-    margin: 2em 0;
+.navbar-nav {
+    padding: 2em 1em;
 }
