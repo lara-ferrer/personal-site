@@ -5,6 +5,10 @@
     color: #fff!important;
 }
 
+::marker {
+    color: #c9216c;
+}
+
 body {
     scroll-behavior: smooth;
 }
@@ -15,9 +19,26 @@ h1, h2, h3, p, ul li {
     text-rendering: optimizeSpeed;
 }
 
-p {
+p, ul li {
     font-size: 1.1em;
+    line-height: 1.4285em;
 }
+
+/* SCROLLBAR */
+::-webkit-scrollbar{
+    width: 14px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-track{
+    border-radius: 0px;
+    background-color: #CCCCCC;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 0px;
+    background-color: #c9216c;
+    background-image: -webkit-linear-gradient(90deg, #c9216c, #f04d2d);
+}
+
 
 /* ENCABEZADOS */
 h1 {
