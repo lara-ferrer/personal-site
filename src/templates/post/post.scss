@@ -10,6 +10,16 @@
         width: 100%;
     }
 
+    a {
+        color: #c9216c;
+        font-weight: 700;
+    }
+
+    a:hover {
+        color: #eb8cb7;
+        transition: 0.4s ease;
+    }
+
     .section-post {
         margin-top: 2em;
         text-align: justify;

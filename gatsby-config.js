@@ -9,7 +9,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-page-progress",
       options: {
-        includePaths: [{ regex: "^/" }],
+        includePaths: [],
+        excludePaths: ["/", { regex: "^/blog" }],
         height: 10,
         prependToBody: false,
         color: `#c9216c`,

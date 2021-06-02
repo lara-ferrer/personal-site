@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Button } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { Grid, Card, Image } from "semantic-ui-react"
 import { Link } from "gatsby"
 import { map } from "lodash"
@@ -17,8 +17,16 @@ export default function PostsList(props) {
                         <Card className="posts-list__item">
                             <div className="posts-list__item__header">
                                 <div className="posts-list__item__header__container">
-                                    <Image src={windowControls} />
-                                    <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
+                                    <Container>
+                                        <Row>
+                                            <Col lg={4} className="controls">
+                                                <Image src={windowControls} />
+                                            </Col>
+                                            <Col lg={8} className="controls">
+                                                <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
+                                            </Col>
+                                        </Row>
+                                    </Container>
                                 </div>
                             </div>
                         <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
@@ -44,8 +52,16 @@ export default function PostsList(props) {
                         <Card className="posts-list__item">
                             <div className="posts-list__item__header">
                                 <div className="posts-list__item__header__container">
-                                    <Image src={windowControls} />
-                                    <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
+                                    <Container>
+                                        <Row>
+                                            <Col lg={4} className="controls">
+                                                <Image src={windowControls} />
+                                            </Col>
+                                            <Col lg={8} className="controls">
+                                                <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
+                                            </Col>
+                                        </Row>
+                                    </Container>
                                 </div>
                             </div>
                         <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
@@ -71,8 +87,16 @@ export default function PostsList(props) {
                         <Card className="posts-list__item">
                             <div className="posts-list__item__header">
                                 <div className="posts-list__item__header__container">
-                                    <Image src={windowControls} />
-                                    <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
+                                    <Container>
+                                        <Row>
+                                            <Col lg={4} className="controls">
+                                                <Image src={windowControls} />
+                                            </Col>
+                                            <Col lg={8} className="controls">
+                                                <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
+                                            </Col>
+                                        </Row>
+                                    </Container>
                                 </div>
                             </div>
                         <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
@@ -98,8 +122,16 @@ export default function PostsList(props) {
                         <Card className="posts-list__item">
                             <div className="posts-list__item__header">
                                 <div className="posts-list__item__header__container">
-                                    <Image src={windowControls} />
-                                    <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
+                                    <Container>
+                                        <Row>
+                                            <Col lg={4} className="controls">
+                                                <Image src={windowControls} />
+                                            </Col>
+                                            <Col lg={8} className="controls">
+                                                <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
+                                            </Col>
+                                        </Row>
+                                    </Container>
                                 </div>
                             </div>
                         <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
