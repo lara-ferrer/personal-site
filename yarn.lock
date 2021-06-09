@@ -1029,6 +1029,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.4.3":
+  version "7.14.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.14.0.tgz#46794bc20b612c5f75e62dd071e24dfd95f1cbe6"
+  integrity sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.12.6":
   version "7.12.12"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.12.12.tgz#f858ab1c76d9c4c23fe0783a0330ad37755f0176"
@@ -6683,6 +6690,11 @@ gatsby-plugin-anchor-links@^1.2.1:
   dependencies:
     scroll-to-element "^2.0.3"
 
+gatsby-plugin-cookiehub-banner@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-cookiehub-banner/-/gatsby-plugin-cookiehub-banner-0.1.0.tgz#44809334ca5c9bd6d456a12e1dccc9caf2500813"
+  integrity sha512-CRsYNhhViU9X8v1Xe1dFAtxDBpibZa8shuM13B8hZdaeCE+KDbOubuKSHY5vhhGnKNVomLfqPX4Xbl4UbT0+PQ==
+
 gatsby-plugin-google-analytics@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-3.0.0.tgz#c3d277c5f71758efe2f6be1e3d13379ea38a67d9"
@@ -6695,6 +6707,13 @@ gatsby-plugin-google-fonts@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-fonts/-/gatsby-plugin-google-fonts-1.0.1.tgz#d71054f7bf207b9a8da227380369e18e6f4e0201"
   integrity sha512-p1NVkn27GUnDA5qHM+Z4cCcLCJIardzZXMon3640sT4xuL/AZJbsx3HEt2KY/5oZu0UXIkytkxzV2Da4rQeUIg==
+
+gatsby-plugin-iubenda-cookie-footer@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-iubenda-cookie-footer/-/gatsby-plugin-iubenda-cookie-footer-1.3.0.tgz#0aca0e6472edccca30d23bb0fc538cef634ab7cc"
+  integrity sha512-RsDk7CEgn4K4KcO12OZ7vOBep9vUqrS06Lp5jurIaciFK4Cr2ewEurw9uv0mNMRoi17Xgrnrj8Q7TSfkCuz8Ng==
+  dependencies:
+    "@babel/runtime" "^7.4.3"
 
 gatsby-plugin-manifest@^2.5.2:
   version "2.6.0"

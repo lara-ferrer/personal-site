@@ -7,6 +7,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-iubenda-cookie-footer',
+      options: {
+        iubendaOptions: {"lang":"es","siteId":2273992,"cookiePolicyId":83731327, "cookiePolicyUrl":"https://www.lara-ferrer.com/"},
+      }
+    },
+    {
       resolve: "gatsby-plugin-page-progress",
       options: {
         includePaths: [],
