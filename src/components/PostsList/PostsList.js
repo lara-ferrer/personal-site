@@ -19,10 +19,10 @@ export default function PostsList(props) {
                                 <div className="posts-list__item__header__container">
                                     <Container>
                                         <Row>
-                                            <Col lg={4} className="controls">
+                                            <Col lg={4} md={4} xs={4} className="controls">
                                                 <Image src={windowControls} />
                                             </Col>
-                                            <Col lg={8} className="controls">
+                                            <Col lg={8} md={8} xs={8}>
                                                 <Link to={`/${post.url}`}><h2>{post.Titulo}</h2></Link>
                                             </Col>
                                         </Row>

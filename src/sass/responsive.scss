@@ -1,4 +1,33 @@
 /* GENERAL RULES */
+h1 {
+    @include tablet {
+        font-size: 1.5em;
+    }
+
+    @include mobile {
+        font-size: 1em;
+    }
+}
+
+h2.text-gradient {
+    @include mobile {
+        margin-bottom: 0.5em!important;
+    }
+
+}
+
+section {
+    @include mobile {
+        margin: 5em 0!important;
+    }
+}
+
+dl, ol, ul {
+    @include mobile {
+        padding: 0 2em;
+    }
+}
+
 h2.text-gradient {
     @include mobile {
         text-align: center;
@@ -13,14 +42,41 @@ h2.text-gradient {
     }
 }
 
+a.btn.btn-primary, .button-blog {
+    @include mobile {
+        width: 100%;
+    }
+}
+
+/* COOKIES */
+#iubenda-cs-banner.iubenda-cs-visible {
+    @include mobile {
+        width: 100vw!important;
+    }
+}
+
 /* MENU */
 .menu {
     @include mobile {
         padding: 1em!important;
     }
+
+    .navbar-brand {
+        @include mobile {
+            margin-right: 0;
+        }
+    }
 }
 
 /* MAIN BANNER SECTION */
+.banner {
+    @include mobile {
+        margin: 0 auto!important;
+        padding: 0 auto!important;
+    }
+}
+
+
 .banner-info {
     @include mobile {
         margin: 0 auto!important;
@@ -49,6 +105,22 @@ section {
     }
 }
 
+/* BANNER SECTION */
+.banner {
+    p {
+        @include mobile {
+            font-size: 1em;
+        }
+    }
+
+    .row {
+        @include mobile {
+            margin: 0!important;
+        }
+    }
+}
+
+
 /* ABOUT SECTION */
 .about p {
     @include mobile {
@@ -73,13 +145,13 @@ section {
 /* CONTACT SECTION */
 .contact {
     @include mobile {
-        padding: 2em 4em;
+        padding: 2em 4em!important;
     }
 }
 
 .contact img {
     @include mobile {
-        width: 50%!important;
+        width: 70%!important;
     }
 }
 
@@ -87,6 +159,12 @@ section {
 .post {
     @include mobile {
         padding: 5em 1.2em!important;
+    }
+}
+
+.post h1 {
+    @include mobile {
+        font-size: 4em!important;
     }
 }
 
@@ -100,8 +178,13 @@ section {
             padding: 0;
         }
 
+        .top {
+            margin: 0!important;
+        }
+
         a.top {
             display: none;
+            
         }
         
     }

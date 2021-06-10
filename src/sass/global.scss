@@ -24,6 +24,10 @@ p, ul li {
     line-height: 1.4285em;
 }
 
+.center {
+    text-align: center;
+}
+
 /* SCROLLBAR */
 ::-webkit-scrollbar{
     width: 14px;
@@ -42,19 +46,11 @@ p, ul li {
 
 /* ENCABEZADOS */
 h1 {
-    font-size: 1.5em!important;
+    font-size: 1.5em;
     line-height: 1.1em!important;
 
     &:last-child {
         margin-top: -30px;
-    }
-
-    @include tablet {
-        font-size: 1.5em!important;
-    }
-
-    @include mobile {
-        font-size: 1em!important;
     }
 }
 
@@ -63,11 +59,6 @@ h2.text-gradient {
     font-size: 45px!important;
     line-height: 55px;
     font-weight: 800;
-
-    @include mobile {
-        margin-bottom: 0.5em!important;
-    }
-
 }
 
 .text-gradient {
@@ -148,5 +139,23 @@ a.btn.btn-primary, .button-blog {
 
     i {
         color: #000;
+    }
+}
+
+/* GLOBAL PAGES */
+.page404 {
+    padding: 10em 0;
+}
+
+.content {
+    padding: 2em 0;
+
+    a {
+        color: #c9216c;
+
+        &:hover {
+            color: #f45fa2;
+            transition: 0.4s ease;
+        }
     }
 }

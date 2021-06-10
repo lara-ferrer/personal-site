@@ -14,23 +14,23 @@ const front =
           <Card.Content>
             <Card.Description>
               <Row>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />Diseño y desarrollo con HTML + CSS + JavaScript</p>
                 </Col>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                 <p><Icon link name="check square" />Desarrollo de aplicaciones con React + Gatsby + GraphQL</p>
                 </Col>
               </Row>
               <Row>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />Desarrollo de páginas web y e-commerce con Wordpress + Woocommerce</p>
                 </Col>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />Desarrollo de páginas JSP con tecnología Java</p>
                 </Col>
               </Row>
               <Row>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />Diseño y prototipado con Figma</p>
                 </Col>
               </Row>
@@ -49,18 +49,18 @@ const back =
           <Card.Content>
             <Card.Description>
               <Row>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />Desarrollo de apps con Java + Maven + JDBC + Servlets</p>
                 </Col>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />Testing en Java con JUnit</p>
                 </Col>
               </Row>
               <Row>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />Uso de Headless CMS: Strapi</p>
                 </Col>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />Gestión de BBDD con SQL + Oracle SQL Developer</p>
                 </Col>
               </Row>
@@ -79,18 +79,18 @@ const software =
           <Card.Content>
             <Card.Description>
               <Row>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />CI/CD en Java con Jenkins</p>
                 </Col>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />Evaluación de la calidad del código con SonarQube</p>
                 </Col>
               </Row>
               <Row>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />Virtualización de VM con VMWare</p>
                 </Col>
-                <Col lg={6} md={6} sm={6} xs={6}>
+                <Col lg={6} md={6} sm={12} xs={12}>
                   <p><Icon link name="check square" />Rastreo y análisis de sitios web con Screaming Frog</p>
                 </Col>
               </Row>

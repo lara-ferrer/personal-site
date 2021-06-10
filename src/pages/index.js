@@ -9,7 +9,6 @@ import Seo from "../components/Seo"
 
 export default function Index(props) {
   const { data } = props
-  const images = data.file
 
   return (
     <Layout>
@@ -17,7 +16,7 @@ export default function Index(props) {
         title = "Inicio"
         description = "¡Hola! Soy Lara, desarrolladora web y consultora SEO. Te animo a que visites mi página web para conocer más sobre mí :)"
       />
-      <Banner images={images}/>
+      <Banner />
       <About />
       <Skills />
       <Work />
@@ -25,20 +24,3 @@ export default function Index(props) {
     </Layout>
   )
 }
-
-export const query = graphql`
-query {
-  file(relativePath: {eq: "profile.png"}) {
-    childImageSharp {
-      fixed(width: 500, height: 600) {
-         base64
-          width
-          height
-          src
-          srcSet
-      }
-    }
-  }
-}
-
-`

@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Layout from "../layouts/Layout.js"
 import PostsList from "../components/PostsList"
 import Pagination from "../components/Pagination"
+import MainTitle from "../components/MainTitle"
 import Seo from "../components/Seo"
 import "./blog.scss"
 
@@ -23,7 +24,7 @@ export default function Blog(props) {
         <Container className="blog-title">
           <Row>
             <Col xs={12} md={12} lg={12}>
-              <h1>Blog</h1>
+              <MainTitle name="Blog" />
               <p>Descubre todo sobre desarrollo web, performance, UX, SEO y mucho más &#x2728;</p>
             </Col>
           </Row>

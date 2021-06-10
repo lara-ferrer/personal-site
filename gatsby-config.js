@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-iubenda-cookie-footer',
       options: {
-        iubendaOptions: {"consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"es","siteId":2273992,"cookiePolicyId":83731327,"cookiePolicyUrl":"https://www.lara-ferrer.com/","banner":{"acceptButtonDisplay":true,"customizeButtonDisplay":true,"acceptButtonColor":"#f04d2d","acceptButtonCaptionColor":"white","customizeButtonColor":"#212121","customizeButtonCaptionColor":"white","rejectButtonColor":"#0073CE","rejectButtonCaptionColor":"white","position":"float-bottom-right","textColor":"white","backgroundColor":"#c9216c"}},
+        iubendaOptions: {"consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"es","siteId":2273992,"cookiePolicyId":83731327,"cookiePolicyUrl":"https://www.lara-ferrer.com/politica-cookies/","banner":{"acceptButtonDisplay":true,"customizeButtonDisplay":true,"acceptButtonColor":"#f04d2d","acceptButtonCaptionColor":"white","customizeButtonColor":"#212121","customizeButtonCaptionColor":"white","rejectButtonColor":"#0073CE","rejectButtonCaptionColor":"white","position":"float-bottom-right","textColor":"white","backgroundColor":"#c9216c"}},
       }
     },
     {
@@ -64,6 +64,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-sharp`,
