@@ -28,6 +28,17 @@ p, ul li {
     text-align: center;
 }
 
+/* COOKIES */
+a.cookies {
+    color: #ffa1cb;
+    font-weight: 700;
+}
+
+a.cookies:hover {
+    color: #d376a0;
+    transition: 0.4s ease;
+}
+
 /* SCROLLBAR */
 ::-webkit-scrollbar{
     width: 14px;
