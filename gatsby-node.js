@@ -5,7 +5,6 @@
  */
 
 // You can delete this file if you're not using it
-
 if (typeof window !== "undefined") {
     // eslint-disable-next-line global-require
     require("smooth-scroll")('a[href*="#"]')
@@ -26,14 +25,10 @@ exports.createPages = async ({ actions, graphql }) => {
                     createdAt
                     id
                     img_destacada {
-                        publicURL
+                      url
                     }
                     url
-                    content {
-                        heading
-                        id_section
-                        text
-                    }
+                    content
                 }
             }
         } 

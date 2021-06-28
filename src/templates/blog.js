@@ -48,15 +48,11 @@ export const query = graphql`
           createdAt
           id
           img_destacada {
-            publicURL
+            url
           }
           url
           Categoria
-          content {
-            heading
-            id_section
-            text
-          }
+          content
         }
     }
 
@@ -71,15 +67,11 @@ export const query = graphql`
           createdAt
           id
           img_destacada {
-            publicURL
+            url
           }
           url
           Categoria
-          content {
-            heading
-            id_section
-            text
-          }
+          content
         }
     }
 
@@ -94,15 +86,11 @@ export const query = graphql`
           createdAt
           id
           img_destacada {
-            publicURL
+            url
           }
           url
           Categoria
-          content {
-            heading
-            id_section
-            text
-          }
+          content
         }
     }
 
@@ -117,15 +105,11 @@ export const query = graphql`
           createdAt
           id
           img_destacada {
-            publicURL
+            url
           }
           url
           Categoria
-          content {
-            heading
-            id_section
-            text
-          }
+          content
         }
     }
 

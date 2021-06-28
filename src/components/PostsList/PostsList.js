@@ -29,7 +29,7 @@ export default function PostsList(props) {
                                     </Container>
                                 </div>
                             </div>
-                        <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
+                        <Link to={`/${post.url}`}><Image src={post.img_destacada.url} /></Link>
                         <Card.Content>
                             <Card.Description>
                                 <p>{post.Extracto}</p>
@@ -64,7 +64,7 @@ export default function PostsList(props) {
                                     </Container>
                                 </div>
                             </div>
-                        <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
+                        <Link to={`/${post.url}`}><Image src={post.img_destacada.url} /></Link>
                         <Card.Content>
                             <Card.Description>
                                 <p>{post.Extracto}</p>
@@ -99,7 +99,7 @@ export default function PostsList(props) {
                                     </Container>
                                 </div>
                             </div>
-                        <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
+                        <Link to={`/${post.url}`}><Image src={post.img_destacada.url} /></Link>
                         <Card.Content>
                             <Card.Description>
                                 <p>{post.Extracto}</p>
@@ -134,7 +134,7 @@ export default function PostsList(props) {
                                     </Container>
                                 </div>
                             </div>
-                        <Link to={`/${post.url}`}><Image src={post.img_destacada.publicURL} /></Link>
+                        <Link to={`/${post.url}`}><Image src={post.img_destacada.url} /></Link>
                         <Card.Content>
                             <Card.Description>
                                 <p>{post.Extracto}</p>

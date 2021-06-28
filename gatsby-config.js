@@ -43,7 +43,7 @@ module.exports = {
       options: {
         //apiURL: `http://localhost:5000`,
         apiURL: `https://blog-personal-strapi.herokuapp.com`,
-        contentTypes: [
+        collectionTypes: [
         'articulo'
         ],
         queryLimit: 1000,

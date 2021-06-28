@@ -22,7 +22,7 @@ export default function post(props) {
             <Seo 
                 title={post.Titulo}
                 description={post.Extracto}
-                image={post.img_destacada.publicURL}
+                image={post.img_destacada.url}
             />
             
             <Container className="post">
@@ -35,7 +35,7 @@ export default function post(props) {
                                 <ShareSocial post={post} />
                             </Col>
                             <Col lg={6}>
-                                <Image src={post.img_destacada.publicURL} />
+                                <Image src={post.img_destacada.url} />
                             </Col>
                         </Row>
                         <hr />
