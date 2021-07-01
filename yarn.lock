@@ -6213,6 +6213,11 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
+gastby@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gastby/-/gastby-1.0.1.tgz#1c83607e3225ad7a0dbf659eec1b966b0edd23bd"
+  integrity sha512-h2Pbj5fdQfiR1HSKrk737BWWNiAD/9KV9LWWQ5wbJYeuyiqsEacWLFhULn1kzkkoTqujSCdt/d3q8yv+Cbn9CQ==
+
 gatsby-awesome-pagination@^0.3.8:
   version "0.3.8"
   resolved "https://registry.yarnpkg.com/gatsby-awesome-pagination/-/gatsby-awesome-pagination-0.3.8.tgz#e50f048ed9b25aecf5e2cd7269cdbd77f168301f"
@@ -7209,7 +7214,7 @@ graceful-fs@^4.2.4:
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.6.tgz#ff040b2b0853b23c3d31027523706f1885d76bee"
   integrity sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==
 
-graphql-compose@~7.25.0:
+graphql-compose@^7.25.0, graphql-compose@~7.25.0:
   version "7.25.1"
   resolved "https://registry.yarnpkg.com/graphql-compose/-/graphql-compose-7.25.1.tgz#9d89f72781931590d4dfca6a709f381f2f76b873"
   integrity sha512-TPXTe1BoQkMjp/MH93yA0SQo8PiXxJAv6Eo6K/+kpJELM9l2jZnd5PCduweuXFcKv+nH973wn/VYzYKDMQ9YoQ==
@@ -14221,7 +14226,7 @@ webpack-virtual-modules@^0.3.2:
   dependencies:
     debug "^3.0.0"
 
-webpack@^5.35.0:
+webpack@^5.24.2, webpack@^5.35.0:
   version "5.41.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.41.0.tgz#217daa27bdd30287c1d7f9d9e0a2304fe33c5a51"
   integrity sha512-pCVO7hVm8XiL6DpPtXrFLS8ktmH/tpvtbEex6hn4RweTFe6z6Cugh5FlQoEPZotb15HiirjM2Kv7THTA7sKLzQ==

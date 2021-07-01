@@ -47,6 +47,9 @@ module.exports = {
         'articulo'
         ],
         queryLimit: 1000,
+        plugins: [
+          `gatsby-plugin-social-sharing-cards`,
+        ],
       },
     },
     `gatsby-plugin-sass`,

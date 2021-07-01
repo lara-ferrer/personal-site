@@ -27,7 +27,8 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-
+  const cardUrl = `${site.siteMetadata.siteUrl}${location.pathname}card.jpg`
+  
   return (
     <Helmet
       htmlAttributes={{
@@ -58,7 +59,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:creator`,
@@ -68,6 +69,10 @@ function SEO({ description, lang, meta, title, image }) {
           name: `twitter:title`,
           content: title,
         },
+        {
+            name: `twitter:image`,
+            content: cardUrl,
+          },
         {
           name: `twitter:description`,
           content: metaDescription,
