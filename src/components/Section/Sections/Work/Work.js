@@ -1,67 +1,82 @@
 import React, { useState, useEffect } from 'react'
-import { Button } from "react-bootstrap";
+import { Button, Carousel } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap"
 import { Card, Image, Icon } from "semantic-ui-react"
 import windowControls from "../../../../images/window_controls.png"
+import { SEOdata } from "./SEOdata";
+import { DEVdata } from "./DEVdata";
+import BtnSlider from "./BtnSlider/BtnSlider"
 
 const seo = 
   <React.Fragment>
+  <Carousel className="carousel-dark" controls={true} interval={null} indicators="true" fade wrap="false" prevLabel={null} nextLabel={null}>
+    {SEOdata.map((item, i) => (
+      <Carousel.Item>
         <Card className="card-special">
           <div className="card-special__header">
             <div className="card-special__header__item item-1"><Image src={windowControls} /></div>
-            <div className="card-special__header__item item-2 "><h3>Consultora SEO - SocialOnce (2018-actualidad)</h3></div>
+            <div className="card-special__header__item item-2"><h3>{item.title}</h3></div>
           </div>
           <Card.Content>
             <Card.Description>
               <Row>
                 <Col lg={6} md={6} sm={12} xs={12}>
-                  <p><Icon link name="check square" />Análisis, planificación y ejecución de estrategias SEO On-Page y Off-Page</p>
+                  <p><Icon link name="check square" />{item.tasks.firstTask}</p>
                 </Col>
                 <Col lg={6} md={6} sm={12} xs={12}>
-                  <p><Icon link name="check square" />Análisis y mejoras de performance web (WPO)</p>
+                  <p><Icon link name="check square" />{item.tasks.secondTask}</p>
                 </Col>
               </Row>
               <Row>
                 <Col lg={6} md={6} sm={12} xs={12}>
-                  <p><Icon link name="check square" />Coordinación con otras estrategias de marketing on-line (RRSS, e-mail marketing...)</p>
+                  <p><Icon link name="check square" />{item.tasks.thirdTask}</p>
                 </Col>
                 <Col lg={6} md={6} sm={12} xs={12}>
-                  <p><Icon link name="check square" />Uso de herramientas como Screaming Frog, AHREFS, Sistrix, etc. para auditar y monitorizar los proyectos</p>
+                  <p><Icon link name="check square" />{item.tasks.fourthTask}</p>
                 </Col>
               </Row>
             </Card.Description>
           </Card.Content>
         </Card>
+      </Carousel.Item>
+    ))}
+  </Carousel>
   </React.Fragment>
 
 const dev = 
     <React.Fragment>
-      <Card className="card-special">
-          <div className="card-special__header">
-            <div className="card-special__header__item item-1"><Image src={windowControls} /></div>
-            <div className="card-special__header__item item-2"><h3>Diseñadora y desarrolladora web - SocialOnce (2018-actualidad)</h3></div>
-          </div>
-          <Card.Content>
-            <Card.Description>
-              <Row>
-                <Col lg={6} md={6} sm={12} xs={12}>
-                  <p><Icon link name="check square" />Diseño de wireframes y layouts</p>
-                </Col>
-                <Col lg={6} md={6} sm={12} xs={12}>
-                  <p><Icon link name="check square" />Maquetación web con HTML5 + CSS3 + Bootstrap</p>
-                </Col>
-              </Row>
-              <Row>
-                <Col lg={6} md={6} sm={12} xs={12}>
-                  <p><Icon link name="check square" />Desarrollo y optimización de tiendas on-line con Woocommerce y Prestashop</p>
-                </Col>
-                <Col lg={6} md={6} sm={12} xs={12}>
-                  <p><Icon link name="check square" />Optimización técnica de performance web (WPO)</p>
-                </Col>
-              </Row>
-            </Card.Description>
-          </Card.Content>
-        </Card>
+      <Carousel className="carousel-dark" controls={true} interval={null} indicators="true" fade wrap="false" prevLabel={null} nextLabel={null}>
+        {DEVdata.map((item, i) => (
+          <Carousel.Item>
+            <Card className="card-special" key={i}>
+              <div className="card-special__header">
+                <div className="card-special__header__item item-1"><Image src={windowControls} /></div>
+                <div className="card-special__header__item item-2"><h3>{item.title}</h3></div>
+              </div>
+              <Card.Content>
+                <Card.Description>
+                  <Row>
+                    <Col lg={6} md={6} sm={12} xs={12}>
+                      <p><Icon link name="check square" />{item.tasks.firstTask}</p>
+                    </Col>
+                    <Col lg={6} md={6} sm={12} xs={12}>
+                      <p><Icon link name="check square" />{item.tasks.secondTask}</p>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col lg={6} md={6} sm={12} xs={12}>
+                      <p><Icon link name="check square" />{item.tasks.thirdTask}</p>
+                    </Col>
+                    <Col lg={6} md={6} sm={12} xs={12}>
+                      <p><Icon link name="check square" />{item.tasks.fourthTask}</p>
+                    </Col>
+                  </Row>
+                </Card.Description>
+              </Card.Content>
+            </Card>
+          </Carousel.Item>
+        ))}
+      </Carousel>
     </React.Fragment>
 
 const works = [

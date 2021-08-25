@@ -7,3 +7,37 @@ section {
 i.icon.check.square {
     cursor: default;
 }
+
+.carousel-inner {
+    overflow: initial;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 3%;
+    position: absolute;
+    opacity: 1;
+}
+
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+    filter: none;
+    opacity: 1;
+}
+.carousel-control-prev {
+    left: -13px;
+    @media (max-width: 767px) {
+        left: -8px;
+    }
+    .carousel-control-prev-icon {
+        background-color: #c9216c;
+    }
+}
+
+.carousel-control-next {
+    right: -13px;
+    @media (max-width: 767px) {
+        right: -8px;
+    }
+    .carousel-control-next-icon {
+        background-color: #c9216c;
+    }
+}
