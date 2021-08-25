@@ -9,9 +9,7 @@ import BtnSlider from "./BtnSlider/BtnSlider"
 
 const seo = 
   <React.Fragment>
-  <Carousel className="carousel-dark" controls={true} interval={null} indicators="true" fade wrap="false" prevLabel={null} nextLabel={null}>
     {SEOdata.map((item, i) => (
-      <Carousel.Item>
         <Card className="card-special">
           <div className="card-special__header">
             <div className="card-special__header__item item-1"><Image src={windowControls} /></div>
@@ -38,16 +36,12 @@ const seo =
             </Card.Description>
           </Card.Content>
         </Card>
-      </Carousel.Item>
     ))}
-  </Carousel>
   </React.Fragment>
 
 const dev = 
     <React.Fragment>
-      <Carousel className="carousel-dark" controls={true} interval={null} indicators="true" fade wrap="false" prevLabel={null} nextLabel={null}>
         {DEVdata.map((item, i) => (
-          <Carousel.Item>
             <Card className="card-special" key={i}>
               <div className="card-special__header">
                 <div className="card-special__header__item item-1"><Image src={windowControls} /></div>
@@ -74,9 +68,7 @@ const dev =
                 </Card.Description>
               </Card.Content>
             </Card>
-          </Carousel.Item>
         ))}
-      </Carousel>
     </React.Fragment>
 
 const works = [

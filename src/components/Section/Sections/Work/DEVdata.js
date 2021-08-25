@@ -8,13 +8,13 @@ export const DEVdata = [
             fourthTask: "Análisis y mejoras de performance web (WPO)",
         },
     },
-    {
-        title: "Consultora SEO - SocialOnce (2018-2021)",
-        tasks: {
-            firstTask: "Diseño de wireframes y layouts",
-            secondTask: "Maquetación web con HTML5 + CSS3 + Bootstrap",
-            thirdTask: "Desarrollo y optimización de tiendas on-line con Woocommerce y Prestashop",
-            fourthTask: "Optimización técnica de performance web (WPO)",
-        },
-    }
+    // {
+    //     title: "Desarrolladora web - SocialOnce (2018-2021)",
+    //     tasks: {
+    //         firstTask: "Diseño de wireframes y layouts",
+    //         secondTask: "Maquetación web con HTML5 + CSS3 + Bootstrap",
+    //         thirdTask: "Desarrollo y optimización de tiendas on-line con Woocommerce y Prestashop",
+    //         fourthTask: "Optimización técnica de performance web (WPO)",
+    //     },
+    // }
 ];
