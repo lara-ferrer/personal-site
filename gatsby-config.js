@@ -6,39 +6,6 @@ module.exports = {
     siteUrl: `https://www.lara-ferrer.com/`,
   },
   plugins: [
-      {
-        resolve: `gatsby-plugin-react-social-cards`,
-        options: {
-            query: `{
-              allStrapiArticulo(sort: { fields: createdAt, order: DESC }) {
-                nodes {
-                  Extracto
-                  Titulo
-                  createdAt
-                  id
-                  img_destacada {
-                    url
-                  }
-                  url
-                  content
-                }
-              }
-            }`,
-            queryToPages: (result) => 
-                result.data.allStrapiArticulo.nodes.map(node => {
-                    const slugWithoutSlashes = node.url.replace(/\//g, '');
-                    return {
-                        slug: `/${slugWithoutSlashes}`,
-                        pageContext: {
-                            title: node.Titulo,
-                            coverImage: node.img_destacada.url,
-                        },
-                    };
-                }),
-            component: require.resolve('./src/components/SocialCard/SocialCard.js'),
-            //cardLimit: 1, Useful for debugging.
-        },
-    },
     {
       resolve: "gatsby-plugin-page-progress",
       options: {
