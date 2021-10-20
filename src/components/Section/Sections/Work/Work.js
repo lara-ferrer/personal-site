@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap"
 import SEO from "./SEO";
 import Dev from "./Dev";
+import "./Slider/slider.scss";
 
 const works = [
     {

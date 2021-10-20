@@ -1,6 +1,6 @@
 import React from 'react'
-import leftArrow from "../../../../../images/left-arrow.svg"
-import rightArrow from "../../../../../images/right-arrow.svg"
+import leftArrow from "../../../../../../images/left-arrow.svg"
+import rightArrow from "../../../../../../images/right-arrow.svg"
 import "./btn-slider.scss";
 
 export default function Work({direction, moveSlide}) {
