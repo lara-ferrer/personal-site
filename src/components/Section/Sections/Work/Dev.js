@@ -31,14 +31,6 @@ export default function DEV() {
                         <p><Icon link name="check square" />{item.tasks.fourthTask}</p>
                         </Col>
                     </Row>
-                        <Row>
-                            <Col lg={6} md={6} sm={12} xs={12}>
-                                <p><Icon link name="check square" />{item.tasks.fifthTask}</p>
-                            </Col>
-                            <Col lg={6} md={6} sm={12} xs={12}>
-                                <p><Icon link name="check square" />{item.tasks.sixthTask}</p>
-                            </Col>
-                        </Row>
                     </Card.Description>
                 </Card.Content>
                 </Card>

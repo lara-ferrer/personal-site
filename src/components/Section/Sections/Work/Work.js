@@ -3,7 +3,6 @@ import { Button } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap"
 import SEO from "./SEO";
 import Dev from "./Dev";
-import "./Slider/slider.scss";
 
 const works = [
     {
@@ -47,7 +46,6 @@ export default function Work() {
                         item.filtered === true ? <span key={item.contains}>{item.contains}</span> : ""
                         )}
                     </div>
-                    <Button className={"blow-btn"} href={"https://www.linkedin.com/in/laraferrer/"} target={"_blank"} rel={"nofollow noreferrer noopen"}>Ver más experiencia en LinkedIn</Button>
                 </Col>
             </Row>
           </Container>

@@ -16,13 +16,15 @@ export default function post(props) {
     const { content } = post;
     
     const mapIdSection = content.map(content => content.id_section);
+
+    const image = `/${post.url}-social-card.png`;
     
     return (
         <Layout>
             <Seo 
                 title={post.Titulo}
                 description={post.Extracto}
-                image={post.img_destacada.url}
+                image={image}
             />
             
             <Container className="post">
