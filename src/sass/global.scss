@@ -11,21 +11,28 @@
 
 body {
     scroll-behavior: smooth;
+    font-family: 'Nunito', Arial, sans-serif!important;
 }
 
-h1, h2, h3, p, ul li {
-    font-family: 'Nunito', Arial, sans-serif!important;
+h1, h2, h3, p, ul li, blockquote {
     font-weight: 600;
     text-rendering: optimizeSpeed;
 }
 
-p, ul li {
+p, ul li, blockquote {
     font-size: 1.2em;
     line-height: 1.4285em;
 }
 
 .center {
     text-align: center;
+}
+
+blockquote {
+    background-color: #fff0f7;
+    padding: 1.5em 0 1.5em 1.5em;
+    font-style: italic;
+    border-left: 5px solid #c9216c;
 }
 
 /* COOKIES */
