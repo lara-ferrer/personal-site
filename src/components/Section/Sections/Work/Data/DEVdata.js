@@ -1,29 +1,24 @@
 export const DEVdata = [
     {
-        title: "Software Development Engineer - Plain Concepts (nov. 2021 - actualidad)",
+        title: "Desarrolladora front-end | TheCookies (jul 2021 - sept 2021)",
         tasks: {
             firstTask: "Desarrollo de aplicaciones web con React y Gatsby",
-            secondTask: "Desarrollo con headless CMS (Sanity)",
-            thirdTask: "Maquetación y desarrollo de componentes reutilizables con React",
-            fourthTask: "Desarrollo de sistemas de diseño en Storybook",
+            secondTask: "Uso de preprocesadores CSS como SASS",
+            thirdTask: "Uso de headless CMS como Sanity, empleando GraphQL para el acceso a los datos",
+            fourthTask: "Empleo de metodologías de desarrollo de software como Domain Driven Design (DDD) o arquitectura hexagonal",
+            fifthTask: "Empleo de metodologías de desarrollo front-end como BEM, ITCSS y Atomic Design",
+            sixthTask: "Uso de TypeScript para el tipado de datos y definición de interfaces",
         },
     },
-    // {
-    //     title: "Desarrolladora front-end - TheCookies (2021-actualidad)",
-    //     tasks: {
-    //         firstTask: "Desarrollo de páginas web con React, Gastby y Sanity",
-    //         secondTask: "Maquetación web con HTML5 + CSS3",
-    //         thirdTask: "Maquetación y desarrollo de componentes reutilizables",
-    //         fourthTask: "Análisis y mejoras de performance web (WPO)",
-    //     },
-    // },
-    // {
-    //     title: "Desarrolladora web - SocialOnce (2018-2021)",
-    //     tasks: {
-    //         firstTask: "Diseño de wireframes y layouts",
-    //         secondTask: "Maquetación web con HTML5 + CSS3 + Bootstrap",
-    //         thirdTask: "Desarrollo y optimización de tiendas on-line con Woocommerce y Prestashop",
-    //         fourthTask: "Optimización técnica de performance web (WPO)",
-    //     },
-    // }
+    {
+        title: "Desarrolladora web | SocialOnce (oct 2018 - jul 2021)",
+        tasks: {
+            firstTask: "Desarrollo de páginas web responsive empleando HTML, CSS y JavaScript para el front-end, además de frameworks como Bootstrap, y PHP para el back-end",
+            secondTask: "Integración con diferentes servicios externos como Stripe para realizar pagos, Mailchimp para e-mail marketing, o Cloudinary para optimización de imágenes",
+            thirdTask: "Desarrollo de páginas web en Wordpress",
+            fourthTask: "Optimización de performance web, monitorizando las diferentes métricas disponibles y proponiendo soluciones técnicas para su mejora",
+            fifthTask: "Desarrollo y mantenimiento de tiendas on-line en WooCommerce y Prestashop",
+            sixthTask: "Diseño de interfaces en Figma",
+        },
+    }
 ];
