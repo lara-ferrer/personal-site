@@ -2,8 +2,6 @@ import React from "react"
 import "./Hero.scss"
 import { Container, Row, Col } from "react-bootstrap"
 import { StaticImage } from "gatsby-plugin-image"
-import { useState, useEffect, useRef } from "react"
-import useTypewriter from "react-typewriter-hook"
   
 export interface Hero {
   name: string;
