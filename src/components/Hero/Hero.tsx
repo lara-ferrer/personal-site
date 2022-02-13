@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Hero = () => {
 	return (
-		<div className="hero">
+		<section className="hero">
 			<Container>
 				<Row>
 					<Col sm={12} md={6} lg={6} className="d-flex">
@@ -19,7 +19,7 @@ const Hero = () => {
 					</Col>
 				</Row>
 			</Container>
-		</div>
+		</section>
 	)
 }
 
