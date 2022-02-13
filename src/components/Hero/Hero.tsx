@@ -2,12 +2,8 @@ import React from "react"
 import "./Hero.scss"
 import { Container, Row, Col } from "react-bootstrap"
 import { StaticImage } from "gatsby-plugin-image"
-  
-export interface Hero {
-  name: string;
-}
 
-const Hero: React.FC<Hero> = () => {
+const Hero = () => {
 	return (
 		<div className="hero">
 			<Container>
