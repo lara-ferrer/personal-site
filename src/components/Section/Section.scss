@@ -1,7 +1,25 @@
-@import "../../sass/index.scss";
+@import "../../sass/_mixins.scss";
 
-section {
+.section {
     margin: 8em 0;
+
+    &__title {
+        font-family: 'Italiana', sans-serif!important;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+
+        @include bp(sm) {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+    }
+
+    &__about {
+        @include bp(sm) {
+            text-align: center;
+        }
+    }
 }
 
 i.icon.check.square {
