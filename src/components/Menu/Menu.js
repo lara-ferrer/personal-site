@@ -14,7 +14,7 @@ export default function SecondMenu() {
 	useEffect(() => {
 		if (typeof window !== "undefined") {
 		  window.addEventListener("scroll", () =>
-		  	setScroll(window.pageYOffset > 300)
+		  	setScroll(window.pageYOffset >= 300)
 		  );
 		}
 	  }, []);
