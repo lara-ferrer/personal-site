@@ -16,7 +16,7 @@ const works = [
     }
   ];
 
-export default function Work() {
+const Work = () => {
     const [filter, setFilter] = useState("dev");
     const [projects, setProjects] = useState([]);
 
@@ -55,3 +55,5 @@ export default function Work() {
         
     )
 }
+
+export default Work

@@ -53,7 +53,7 @@ const skills = [
 	}
 ]
 
-export default function Skills() {
+const Skills = () => {
 	const [filter, setFilter] = useState("front")
 	const [projects, setProjects] = useState([])
 
@@ -89,3 +89,5 @@ export default function Skills() {
 		</section>
 	)
 }
+
+export default Skills
