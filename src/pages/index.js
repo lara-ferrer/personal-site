@@ -1,9 +1,7 @@
 import React from "react"
 import Layout from "../layouts/Layout"
 import Hero from "../components/Hero"
-import About from "../components/Section/Sections/About/About"
-import Skills from "../components/Section/Sections/Skills/Skills"
-import Work from "../components/Section/Sections/Work/Work"
+import Section from "../components/Section"
 import Contact from "../components/Contact/Contact"
 import Seo from "../components/Seo"
 import ContactButton from "../components/ContactButton/ContactButton"
@@ -20,9 +18,9 @@ export default function Index(props) {
 			<ContactButton />
 			<main>
 				<Hero />
-				<About />
-				<Skills />
-				<Work />
+				<Section type="about" />
+				<Section type="skills" />
+				<Section type="work" />
 				<Contact />
 			</main>
 		</Layout>
