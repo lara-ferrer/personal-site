@@ -2,7 +2,8 @@
 
 .section {
     margin: 8em 0;
-    height: 100vh;
+    height: 50vh;
+    display: flex;
 
     &__title {
         font-family: 'Italiana', sans-serif!important;
@@ -17,9 +18,8 @@
     }
 
     &__about {
-        @include bp(sm) {
-            text-align: center;
-        }
+        text-align: center;
+        align-self: center;
     }
 }
 
