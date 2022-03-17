@@ -21,6 +21,11 @@
         text-align: center;
         align-self: center;
     }
+
+    &__index {
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+    }
 }
 
 i.icon.check.square {
