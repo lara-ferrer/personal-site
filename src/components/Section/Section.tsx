@@ -23,9 +23,9 @@ const Section: React.FC<SectionProps> = (type) => {
 	}
 
 	return (
-		<section className="section">
+		<>
 			{sectionBuilder(type)}
-		</section>
+		</>
 	)
 	
 }
