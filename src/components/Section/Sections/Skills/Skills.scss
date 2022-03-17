@@ -1,8 +1,4 @@
 .skills {
-    background-image: url('../../../../images/holo-background.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 9rem 0;
 
     .btn {
@@ -20,5 +16,23 @@
             font-weight: 800;
             text-transform: uppercase;
         }
+    }
+
+    .row {
+        gap: 1em;
+    }
+
+    &__square {
+        background-image: url('../../../../images/holo-background.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30%;
+        padding: 0.2em;
+    }
+
+    &__content {
+        background-color: rgb(45, 45, 45);
+        padding: 3em;
     }
 }

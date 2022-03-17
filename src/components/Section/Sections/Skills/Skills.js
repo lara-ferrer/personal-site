@@ -54,35 +54,35 @@ const skills = [
 ]
 
 const Skills = () => {
-	const [filter, setFilter] = useState("front")
-	const [projects, setProjects] = useState([])
-
-	useEffect(() => {
-		setProjects(skills)
-	}, [])
-	useEffect(() => {
-		setProjects([])
-		const filtered = skills.map(p => ({ ...p, filtered: p.category.includes(filter) }))
-		setProjects(filtered)
-	}, [filter])
-
 	return (
 		<section className="section skills">
 			<Container className="skillgallery">
 				<Row>
-					<Col lg={5}>
-						<h2 className="section__title">¿Cuáles son mis habilidades?</h2>
-						<div className="gallery-controls">
-							<span className="btn btn--primary" href="#" active={filter === "front"} onClick={() => setFilter("front")}>Front-end</span>
-							<span className="btn btn--primary" href="#" active={filter === "back"} onClick={() => setFilter("back")}>Back-end</span>
-							<span className="btn btn--primary" href="#" active={filter === "software"} onClick={() => setFilter("software")}>Software&amp;tools</span>
+					<Col lg={12}>
+						<p className="section__index">02. Skills</p>
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={4} className="skills__square">
+						<div className="skills__content">
+							<p>Front-end</p>
+							<li>Desarrollo de aplicaciones con React</li>
+							<li>Uso de Static Site Generators como Gatsby</li>
+							<li>Desarrollo de Sistemas de Diseño con Storybook + React</li>
 						</div>
 					</Col>
-
-					<Col lg={7}>	
-						{projects.map(item =>
-							item.filtered === true ? <span key={item.contains}>{item.contains}</span> : ""
-						)}
+					<Col lg={4} className="skills__square">
+						<div className="skills__content">
+							<p>UX/UI</p>
+							<li>Desarrollo de aplicaciones con React</li>
+							<li>Uso de Static Site Generators como Gatsby</li>
+						</div>
+					</Col>
+					<Col lg={4} className="skills__square">
+						<div className="skills__content">
+							<p>UX/UI</p>
+							<li>Diseño de interfaces gráficas con Figma</li>
+						</div>
 					</Col>
 				</Row>
 			</Container>
