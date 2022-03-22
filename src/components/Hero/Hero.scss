@@ -1,0 +1,56 @@
+@import "../../sass/_mixins.scss";
+
+.hero {
+    background-image: url('../../images/holo-background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 6em;
+
+    .container {
+        padding: 0!important;
+
+        .row {
+            height: 50em;
+        }
+    }
+
+    &__image {
+        text-align: right;
+        align-self: end;
+
+        @include bp(sm) {
+            width: 60%;
+            margin: auto;
+        }
+    }
+
+    &__info {
+        padding: 3em;
+        width: 100%!important;
+        align-self: center;
+        color: #000;
+
+        @include bp(sm) {
+            text-align: center;
+        }
+
+        p {
+            font-family: 'Italiana', sans-serif!important;
+            font-size: 2.5rem;
+
+            @include bp(md) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__title {
+        font-family: 'Italiana', sans-serif!important;
+        font-size: 4rem;
+
+        @include bp(md) {
+            font-size: 3rem;
+        }
+    }
+}

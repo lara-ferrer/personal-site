@@ -1,0 +1,20 @@
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    transition: 0.4s ease;
+
+    &--primary {
+        background-color: #000;
+        color: #fff;
+        &:hover {
+            background-color: transparent;
+            border: 1px solid #000;
+            transition: 0.4s ease;
+        }
+    }
+
+    &--secondary {
+        background-color: #fff;
+        color: #000;
+    }
+}

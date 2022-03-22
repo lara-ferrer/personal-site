@@ -4,6 +4,7 @@ import Footer from "../components/Footer"
 import BannerCookies from "../components/GTM"
 import 'fontsource-nunito/600.css'
 import 'fontsource-nunito/800.css'
+import "../sass/index.scss"
 
 export default function Layout(props) {
     const { children } = props

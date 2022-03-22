@@ -1,7 +1,31 @@
-@import "../../sass/index.scss";
+@import "../../sass/_mixins.scss";
 
-section {
+.section {
     margin: 8em 0;
+    height: 50vh;
+    display: flex;
+
+    &__title {
+        font-family: 'Italiana', sans-serif!important;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+
+        @include bp(sm) {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+    }
+
+    &__about {
+        text-align: center;
+        align-self: center;
+    }
+
+    &__index {
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+    }
 }
 
 i.icon.check.square {
