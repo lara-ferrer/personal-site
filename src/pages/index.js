@@ -14,7 +14,7 @@ export default function Index(props) {
     <Layout>
       <Seo 
         title = "Inicio"
-        description = "¡Hola! Soy Lara, desarrolladora web y consultora SEO. Te animo a que visites mi página web para conocer más sobre mí :)"
+        description = "¡Hola! Soy Lara, desarrolladora web. Te animo a que visites mi página web para conocer más sobre mí :)"
       />
       <Banner />
       <About />
