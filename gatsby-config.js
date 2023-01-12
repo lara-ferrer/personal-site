@@ -41,8 +41,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        //apiURL: `http://localhost:5000`,
-        apiURL: `https://blog-personal-strapi.herokuapp.com`,
+        apiURL: `https://personal-blog-production-a3ed.up.railway.app`,
         collectionTypes: [
         'articulo'
         ],
